@@ -1,1 +1,2 @@
-# rock-paper-scissors
+# rock-paper-scissor
+This is a website that allows human users to play against a computer in a game of rock paper scissors for as long as they would like. This is played in the console of the browser, which can be accessed by inspecting the page.
