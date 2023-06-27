@@ -1,0 +1,95 @@
+html, body{
+    height: 100%;
+    margin: 0px;
+    /* overflow: hidden; */
+}
+body{
+    background-image: url('https://img.freepik.com/free-vector/outdoor-park-playground-scene_1308-29064.jpg');
+    padding-top: 10px;
+    background-size: 100% 100%;
+    background-position: bottom center;
+}
+.selection {
+    display: flex;
+    gap: 10px;
+}
+button.choice{
+    padding: 10px;
+    background-color: white;
+    border-style: solid;
+    border-color: #4CAF50;
+    border-radius: 20px;
+    border-width: 2px;
+    transition-duration: 0.4s;
+}
+button.choice:hover {
+background-color: #4CAF50; /* Green */
+color: white;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5vh;
+}
+.rock, .paper, .scissors {
+display: flex;
+flex-direction: column;
+}
+.rock img, .paper img, .scissors img{
+    width: 200px;
+}
+h1 {
+    animation: loadTitle 2s ease-in;
+    color: red;
+    font-size: 50px;
+    margin: 0;
+}
+
+@keyframes loadTitle {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+span{
+    display: inline-block;
+    animation: shake 0.5s infinite ease;
+}
+h3{
+    display: flex;
+    gap: 10px;
+    font-size: 36px;
+    margin: 0;
+}
+
+h5{
+    font-size: 32px;
+    font-weight:bold;
+    margin: 0px;
+}
+
+@keyframes shake {
+    0% {
+        color: red;
+      transform: translateX(0);
+    }
+    25% {
+        color: green;
+      transform: translateY(-5px);
+    }
+    50% {
+        color: white;
+      transform: translateY(5px);
+    }
+    
+    75% {
+        color: yellow;
+      transform: translateY(5px);
+    }
+    100% {
+        color: black;
+      transform: translateY(0);
+    }
+  }
