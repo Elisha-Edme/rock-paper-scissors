@@ -1,19 +1,24 @@
-html, body{
+html{
     height: 100%;
     margin: 0px;
-    /* overflow: hidden; */
+    overflow: hidden;
+    background-image: url('https://img.freepik.com/free-vector/outdoor-park-playground-scene_1308-29064.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    min-width: 500px;
 }
 body{
-    background-image: url('https://img.freepik.com/free-vector/outdoor-park-playground-scene_1308-29064.jpg');
     padding-top: 10px;
-    background-size: 100% 100%;
-    background-position: bottom center;
+    height: 100%;
 }
-.selection {
+.player-selection, .computer-selection{
     display: flex;
-    gap: 10px;
+    gap: 2vh;
+    align-items: center;
+    flex-direction: column;
+    height:fit-content;
 }
-button.choice{
+button.player-choice, button.computer-choice{
     padding: 10px;
     background-color: white;
     border-style: solid;
@@ -21,8 +26,14 @@ button.choice{
     border-radius: 20px;
     border-width: 2px;
     transition-duration: 0.4s;
+    gap: 1vh;
+
 }
-button.choice:hover {
+
+img {
+    width: 100px;
+}
+button.player-choice:hover {
 background-color: #4CAF50; /* Green */
 color: white;
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -33,14 +44,10 @@ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     align-items: center;
     text-align: center;
     gap: 5vh;
+    height: 100%;
+    width: 100%;
 }
-.rock, .paper, .scissors {
-display: flex;
-flex-direction: column;
-}
-.rock img, .paper img, .scissors img{
-    width: 200px;
-}
+
 h1 {
     animation: loadTitle 2s ease-in;
     color: red;
@@ -53,7 +60,7 @@ h1 {
     100%{opacity: 1;}
 }
 
-span{
+.rumble > span{
     display: inline-block;
     animation: shake 0.5s infinite ease;
 }
@@ -68,6 +75,11 @@ h5{
     font-size: 32px;
     font-weight:bold;
     margin: 0px;
+}
+
+h2 {
+    margin: 0px;
+    font-size: 32px;
 }
 
 @keyframes shake {
@@ -92,4 +104,99 @@ h5{
         color: black;
       transform: translateY(0);
     }
+  }
+
+  .players {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .player {
+    background-color: red;
+    padding: 5px;
+    
+  }
+
+  .player, .computer {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    height:fit-content;
+  }
+  .computer {
+    padding: 5px;
+    background-color: aqua;
+    pointer-events: none;
+  }
+
+  .player-score {
+    color: white;
+  }
+
+  .round-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+  }
+  .player-names{
+    display: flex;
+    justify-content: space-between;
+  }
+  .round-info h2{
+    display: inline;
+  }
+
+  .match{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .computer-card, .player-card{
+    display: flex;
+    gap: 0.5vh;
+    flex-direction: column;
+  }
+
+  th,td {
+    font-size: large;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+  table{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+  }
+
+  .modal {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    background-color: black;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    opacity: 1;
+    color: white;
+    text-align: center;
+  }
+
+  #gameover {
+    position: absolute;
+    opacity: 0.1;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
   }

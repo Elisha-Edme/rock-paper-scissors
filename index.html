@@ -21,21 +21,77 @@
                 <span>!</span>
             </div>
         </h3>
-            <h5>Choose An Object</h5>
-            <div class="selection">
-                <div class="rock">
-                    <img src="https://clipart-library.com/img/1603193.jpg">
-                    <button id="0" class="choice">Rock</button>
+        <h5>Round <span class="round">1</span></h5>
+        <div class="players">
+            <div class="player">
+                <div class="player-selection">
+                    <div >
+                        <button id="0" class="player-choice">
+                            <img class = "rock" src="https://clipart-library.com/img/1603193.jpg">
+                            <h3>Rock</h3>
+                        </button>
+                    </div>
+                    <div >
+                        <button id="1" class="player-choice">
+                            <img class="paper" src="https://as2.ftcdn.net/v2/jpg/01/64/65/59/1000_F_164655938_0XiSjB7ZndWxyzIUakJg6q74TYzcBWv2.jpg">
+                            <h3>Paper</h3>
+                        </button>
+                    </div>
+                    <div >
+                        <button id="2" class="player-choice">
+                            <img class = "scissors" src="https://t3.ftcdn.net/jpg/00/55/10/40/360_F_55104038_VMb5Bfm1cCVyh93VbJIoK4AQrlmyH0Wc.jpg">
+                            <h3>Scissors</h3>
+                        </button>
+                    </div>
                 </div>
-                <div class="paper">
-                    <img src="https://as2.ftcdn.net/v2/jpg/01/64/65/59/1000_F_164655938_0XiSjB7ZndWxyzIUakJg6q74TYzcBWv2.jpg">
-                    <button id="1" class="choice">Paper</button>
-                </div>
-                <div class="scissors">
-                    <img src="https://t3.ftcdn.net/jpg/00/55/10/40/360_F_55104038_VMb5Bfm1cCVyh93VbJIoK4AQrlmyH0Wc.jpg">
-                    <button id="2" class="choice">Scissors</button>
-                </div>
+                <h2 class="player-score">0</h2>
             </div>
+            <div class="round-info">
+                <div class="match">
+                    <h2>VS</h2>
+                </div>
+                <!-- <table>
+                    <tr>
+                      <th>Header 1</th>
+                      <th>Header 2</th>
+                      <th>Header 3</th>
+                    </tr>
+                    <tr>
+                      <td>Data 1</td>
+                      <td>Data 2</td>
+                      <td>Data 3</td>
+                    </tr>
+                    <tr>
+                      <td>Data 4</td>
+                      <td>Data 5</td>
+                      <td>Data 6</td>
+                    </tr>
+                  </table>                   -->
+            </div>
+            <div class="computer">
+                <div class="computer-selection">
+                    <div >
+                        <button class="computer-choice" >
+                            <img src="https://clipart-library.com/img/1603193.jpg">
+                            <h3>Rock</h3>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="computer-choice">
+                            <img src="https://as2.ftcdn.net/v2/jpg/01/64/65/59/1000_F_164655938_0XiSjB7ZndWxyzIUakJg6q74TYzcBWv2.jpg">
+                            <h3>Paper</h3>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="computer-choice">
+                            <img src="https://t3.ftcdn.net/jpg/00/55/10/40/360_F_55104038_VMb5Bfm1cCVyh93VbJIoK4AQrlmyH0Wc.jpg">
+                            <h3>Scissors</h3>
+                        </button>
+                    </div>
+                </div>
+                <h2 class="computer-score">0</h2>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
